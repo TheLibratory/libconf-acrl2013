@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Dustin Younse, Webmaster, @milsyobtaf
 
 # THANKS
 
-    <name>
+    Shout outs to the HTML5 Boilerplate team, who do yeoman's work that makes the rest of us look good in front of our bosses.
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Google Fonts
+    Sublime Text (Registered no less!)
+    Git / GitHub
