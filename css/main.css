@@ -216,7 +216,18 @@ h3.title {
     height: 28px;
 }
 
+table.schedule {
+    width: 100%;
+}
 
+table.schedule thead {
+    font-weight: bold;
+}
+
+table.schedule tr td:first-child {
+    text-align: right;
+    padding-right: 30px;
+}
 
 
 
@@ -300,6 +311,7 @@ h3.title {
     footer nav a {
         display: inline;
         padding: 0;
+        font-size: .7em;
         /*background-color: #f6f6f6;*/
         background-color: #fafafa;
     }
@@ -319,6 +331,10 @@ h3.title {
     .main article {
         float: left;
         width: 57%;
+    }
+
+    .main article.noaside {
+        width: 90%;
     }
 
     .main aside {
