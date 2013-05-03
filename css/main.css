@@ -304,11 +304,11 @@ h3.title {
         background-color: #fafafa;
     }
 
-    footer nav li a:before {
+    footer nav li:before {
         content: '|\00a0\00a0';
     }
 
-    footer nav li:first-child a:before {
+    footer nav li:first-child:before {
         content: '';
     }
 
