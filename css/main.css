@@ -100,18 +100,28 @@ body {
     border-top: 10px solid #cc5500;
 }
 
+@media screen and (min-width: 768px) {
+    .main aside {
+        margin-top: 10px;
+        border-top: 5px solid #cc5500;
+    }
+}
+
 .header-container,
 .footer-container,
 .main aside {
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
+    background: #fafafa;
 }
 
 .title {
     color: #222222;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .main.wrapper {
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #fafafa;
     position: relative;
     z-index: -10;
 }
@@ -150,6 +160,18 @@ nav a:hover {
 /* ==============
     MOBILE: Main
    ============== */
+
+h1.title {
+    font-size: 2.2em;
+    line-height: 1.2em;
+    margin: .2em 0 0;
+}
+
+h3.title {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: .2em 0 .5em .5em;
+}
 
 .main {
     padding: 10px 0 20px;
@@ -199,7 +221,6 @@ nav a:hover {
 
 
 
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -211,32 +232,33 @@ nav a:hover {
    ==================== */
 
     nav a {
-        float: right;
+        float: none;
         width: auto;
-        margin: 0 1.7%;
+        border-radius: 2px;
+        margin: 5px 1.7%;
         padding: 5px 5px;
         margin-bottom: 0;
     }
 
-    footer nav a {
+/*    footer nav a {
         float: none;
         width: auto;
         margin: 0 1.7%;
         padding: 5px 5px;
         margin-bottom: 0;
-    }
+    }*/
 
     nav li:first-child a {
         /*margin-left: 0;*/
     }
 
     nav li:last-child a {
-        margin-right: 0;
+    /*    margin-right: 0;*/
     }
 
-    footer nav li:last-child a {
+    /*footer nav li:last-child a {
         margin-right: 1.7%;
-    }
+    }*/
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -269,12 +291,39 @@ nav a:hover {
    ============ */
 
     .title {
-        float: left;
+        float: none;
     }
 
     nav {
         float: right;
-        width: 60%;
+        width: 100%;
+    }
+
+    nav a {
+        display: inline;
+        padding: 5px 10px;
+        margin: 0 5px;
+        line-height: 2em;
+    }
+
+    footer.wrapper {
+        width: auto;
+        padding: 0;
+    }
+
+    footer nav a {
+        display: inline;
+        padding: 0;
+        /*background-color: #f6f6f6;*/
+        background-color: #fafafa;
+    }
+
+    footer nav li a:before {
+        content: '|\00a0\00a0';
+    }
+
+    footer nav li:first-child a:before {
+        content: '';
     }
 
 /* ============
@@ -292,6 +341,18 @@ nav a:hover {
     }
 }
 
+@media only screen and (min-width: 1000px) {
+
+/* ===============
+    In betweener for the header
+   =============== */
+
+    .title {
+        clear: both;
+    }
+
+}
+
 @media only screen and (min-width: 1140px) {
 
 /* ===============
@@ -302,8 +363,16 @@ nav a:hover {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+
     nav {
-        width: 75%;
+        float: left;
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer nav {
+        float: none;
+        width: 1026px;
+        margin: 0 auto;
     }
 }
 
