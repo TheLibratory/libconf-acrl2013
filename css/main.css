@@ -73,23 +73,47 @@ body {
     ALL: Orange Theme
    =================== */
 
+@media only screen and (min-width: 768px) {
+   body {
+       background: url('../img/furley_bg.png');
+   }
+   .main.wrapper {
+       padding-left: 2em;
+       padding-right: 2em;
+   }
+}
+
+/* 1.5 dpr */
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
+body {
+    background: url('../img/furley_bg_@2x.png');
+}
+}
+
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 10px solid #cc5500;
+    padding-bottom: 10px;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 10px solid #cc5500;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #f6f6f6;
 }
 
 .title {
-    color: white;
+    color: #222222;
+}
+
+.main.wrapper {
+    background-color: white;
+    position: relative;
+    z-index: -10;
 }
 
 /* ==============
@@ -103,20 +127,20 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    margin-bottom: 5px;
+    padding: 5px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: #222222;
+    background: #d5d5d5;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #222222;
 }
 
 nav a:hover {
@@ -128,7 +152,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 10px 0 20px;
 }
 
 .main article h1 {
@@ -136,12 +160,12 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: #222222;
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
+    color: #222222;
     padding: 20px 0;
 }
 
@@ -157,12 +181,17 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.bar-ut {
+   width: 100%;
+   background-color: white;
+   height: 35px;
+}
 
-
-
-
-
-
+.bar-library {
+    width: 100%;
+    background-color: #cc5500;
+    height: 28px;
+}
 
 
 
@@ -182,19 +211,31 @@ nav a:hover {
    ==================== */
 
     nav a {
-        float: left;
-        width: 27%;
+        float: right;
+        width: auto;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 5px 5px;
+        margin-bottom: 0;
+    }
+
+    footer nav a {
+        float: none;
+        width: auto;
+        margin: 0 1.7%;
+        padding: 5px 5px;
         margin-bottom: 0;
     }
 
     nav li:first-child a {
-        margin-left: 0;
+        /*margin-left: 0;*/
     }
 
     nav li:last-child a {
         margin-right: 0;
+    }
+
+    footer nav li:last-child a {
+        margin-right: 1.7%;
     }
 
 /* ========================
@@ -233,7 +274,7 @@ nav a:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 60%;
     }
 
 /* ============
@@ -260,6 +301,9 @@ nav a:hover {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+    nav {
+        width: 75%;
     }
 }
 
