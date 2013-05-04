@@ -75,7 +75,7 @@ body {
    =================== */
 
 @media only screen and (min-width: 768px) {
-   body {
+   .main-container {
        background: url('../img/furley_bg.png');
    }
    .main.wrapper {
@@ -86,7 +86,7 @@ body {
 
 /* 1.5 dpr */
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
-body {
+.main-container {
     background: url('../img/furley_bg_@2x.png');
 }
 }
