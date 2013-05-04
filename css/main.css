@@ -192,6 +192,10 @@ h3.title {
     padding: 20px 0;
 }
 
+header.presenter h3 {
+    margin: 5px 0 -1em;
+}
+
 /* ===============
     ALL: IE Fixes
    =============== */
