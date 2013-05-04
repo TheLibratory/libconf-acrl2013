@@ -117,11 +117,6 @@ body {
 
 }
 
-.main-container {
-    position: relative;
-    z-index: -10;
-}
-
 .title {
     color: #222222;
     font-family: 'Fjalla One', sans-serif;
@@ -281,6 +276,11 @@ table.schedule tr td:first-child {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
+    }
+
+    .header-container {
+        position: relative;
+        z-index: 10;
     }
 
 /* ============
