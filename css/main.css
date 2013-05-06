@@ -179,7 +179,7 @@ h3.title {
 
 .main aside {
     color: #222222;
-    padding: 0px 5% 10px;
+    padding: 0px 2% 10px;
 }
 
 .footer-container footer {
@@ -246,7 +246,20 @@ table.schedule tr td:first-child {
     height: 100%;
 }
 
+:target {
+    background-color: #F5F51C;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    padding: 5px;
+    border-radius: 2px;
+}
 
+aside > h3#registration {
+    padding: 5px;
+    margin: .5em 0 0 -.2em;
+}
 
 /* ==========================================================================
    Media Queries
@@ -360,6 +373,11 @@ table.schedule tr td:first-child {
     .main aside {
         float: right;
         width: 28%;
+    }
+
+    aside.presenters {
+        font-size: .9em;
+        line-height: 1.4em;
     }
 }
 
