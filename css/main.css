@@ -248,6 +248,30 @@ table.schedule tr td:first-child {
     padding-right: 30px;
 }
 
+p.download {
+  margin: .5em auto;
+}
+
+article.themes-page p.download {
+  margin: -1em auto .5em;
+}
+
+a.download {
+  text-decoration: none;
+  background: url('../img/files/ppt.png') no-repeat center right;
+  padding-right: 20px;
+  background-size: 18px;
+}
+
+aside.presentations a:after {
+
+}
+
+aside.presentations a:hover,
+aside.presentations a:focus {
+  text-decoration: underline;
+}
+
 ul.sponsors {
     padding: 0;
 }
